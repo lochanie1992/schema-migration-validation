@@ -1,0 +1,21 @@
+▶️ How to Run
+Option 1: Inside Snowflake Worksheets
+
+Open Snowsight → Worksheets.
+
+Create a new Python Worksheet.
+
+Paste the full script.
+
+Run the script → It will return a Snowpark DataFrame with mismatches.
+
+Option 2: Run Locally with Snowpark Python
+
+Install Snowpark:
+
+pip install snowflake-snowpark-python
+
+
+Configure your connection (with Session.builder).
+
+Run the script in your Python IDE.
