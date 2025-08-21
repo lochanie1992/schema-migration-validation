@@ -1,0 +1,28 @@
+⚙️ Setup & Prerequisites
+
+Snowflake Account with Python Worksheets enabled.
+
+Snowpark for Python library available in Snowflake (pre-installed in Worksheets).
+
+Access privileges to INFORMATION_SCHEMA.TABLES and INFORMATION_SCHEMA.COLUMNS in both source and target databases.
+
+📂 Configuration inside the script
+
+Modify these variables to point to your schemas:
+
+db1 = "source_database"
+schema1 = "source_schema"
+
+db2 = "target_database"
+schema2 = "target_schema"
+
+
+You can also customize the excluded columns (ignored in comparison):
+
+EXCLUDED_COLUMNS = {
+    "CREATED_AT",
+    "UPDATED_AT",
+    "CREATED_BY",
+    "UPDATED_BY",
+    "LOAD_TIMESTAMP"
+}
